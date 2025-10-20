@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esempi di immagini in HTML</title>
+</head>
+<body>
+  <h1>Il tag &lt;img&gt;</h1>
+
+  <p>
+    Il tag <code>&lt;img&gt;</code> serve per inserire un'immagine in una pagina web.<br>
+    Ha due attributi fondamentali:
+  </p>
+
+  <ul>
+    <li><strong>src</strong>: indica il percorso dell'immagine (dove si trova)</li>
+    <li><strong>alt</strong>: descrive l’immagine, utile se non viene caricata o per i non vedenti</li>
+  </ul>
+
+  <hr>
+
+  <h2>1. Immagine con percorso relativo</h2>
+  <p>
+    L’immagine si trova nella stessa cartella del file HTML.<br>
+    Esempio di codice:
+  </p>
+
+  <pre>
+&lt;img src="logo.png" alt="Logo della scuola"&gt;
+  </pre>
+
+  <p>Risultato:</p>
+  <img src="logo.png" alt="Logo della scuola" width="150">
+
+  <hr>
+
+  <h2>2. Immagine in una sottocartella</h2>
+  <p>
+    L’immagine si trova in una cartella chiamata <code>immagini</code>.<br>
+    Esempio di codice:
+  </p>
+
+  <pre>
+&lt;img src="immagini/computer.jpg" alt="Computer da laboratorio"&gt;
+  </pre>
+
+  <p>Risultato:</p>
+  <img src="immagini/computer.jpg" alt="Computer da laboratorio" width="200">
+
+  <hr>
+
+  <h2>3. Immagine con percorso assoluto</h2>
+  <p>
+    L’immagine è caricata da Internet (da un sito esterno).<br>
+    Esempio di codice:
+  </p>
+
+  <pre>
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
+     alt="Logo HTML5"&gt;
+  </pre>
+
+  <p>Risultato:</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
+       alt="Logo HTML5" width="100">
+
+  <hr>
+
+  <h2>4. Immagine non trovata</h2>
+  <p>
+    Se l’immagine non esiste, viene mostrato solo il testo dell’attributo <code>alt</code>.
+  </p>
+
+  <pre>
+&lt;img src="immagini/non_esiste.jpg" alt="Immagine non trovata"&gt;
+  </pre>
+
+  <p>Risultato:</p>
+  <img src="immagini/non_esiste.jpg" alt="Immagine non trovata">
+
+  <hr>
+
+  <p><strong>Consiglio:</strong> usa sempre l’attributo <code>alt</code>, è utile per l’accessibilità e per capire se il percorso è sbagliato.</p>
+</body>
+</html>
