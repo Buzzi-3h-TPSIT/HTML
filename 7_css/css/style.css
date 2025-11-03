@@ -1,0 +1,22 @@
+p {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+  font-family: Georgia;
+  text-transform: uppercase;
+}
+/*
+   Questo è un commento
+   su più righe nei CSS
+*/
+.evidenzia {
+  background-color: yellow;
+}
+/* 
+Stile per il titolo con id selettore che 
+può essere usato una sola volta */
+
+#titolo {
+  font-weight: bold;
+  font-size: 20px;
+}
