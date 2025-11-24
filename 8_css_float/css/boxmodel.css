@@ -1,0 +1,29 @@
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px green dotted;
+  padding: 100px;
+  margin-top: 100px;
+  text-align: justify;
+}
+
+img {
+  float: left;
+  margin-right: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+/*
+NOTE
+
+float: left; è una proprietà storica del CSS che fa "galleggiare" 
+un elemento verso sinistra.
+Scopo Originale: È nato per impaginare le immagini all'interno del testo 
+(come nei giornali). Se applichi float: left a un'immagine, questa si 
+sposta a sinistra e il testo le "scorre" attorno sulla destra.
+
+margin-right: 15px; aggiunge un margine a destra dell'elemento.
+
+width: 200px; e height: 200px; definiscono le dimensioni dell'elemento.
+*/

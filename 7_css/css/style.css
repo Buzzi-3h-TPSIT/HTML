@@ -1,3 +1,12 @@
+/*
+Stile per i paragrafi (p):
+p { ... }: Seleziona tutti i tag <p> (paragrafi) della pagina.
+color: red;: Colora il testo di rosso.
+text-align: center;: Allinea il testo al centro della pagina.
+font-size: 30px;: Imposta la grandezza del testo a 30 pixel (piuttosto grande).
+font-family: Georgia;: Cambia il tipo di carattere (font) in "Georgia".
+text-transform: uppercase;: Trasforma tutto il testo in MAIUSCOLO, indipendentemente da come è scritto nell'HTML.
+*/
 p {
   color: red;
   text-align: center;
@@ -5,16 +14,22 @@ p {
   font-family: Georgia;
   text-transform: uppercase;
 }
+
 /*
-   Questo è un commento
-   su più righe nei CSS
+Classe per evidenziare (.evidenzia):
+.evidenzia { ... }: Seleziona qualsiasi elemento che ha l'attributo class="evidenzia".
+background-color: yellow;: Aggiunge uno sfondo giallo, creando un effetto "evidenziatore".
+
 */
 .evidenzia {
   background-color: yellow;
 }
+
 /* 
-Stile per il titolo con id selettore che 
-può essere usato una sola volta */
+#titolo { ... }: Seleziona l'unico elemento nella pagina che ha l'attributo id="titolo" (di solito usato per un elemento unico e specifico).
+font-weight: bold;: Rende il testo in grassetto.
+font-size: 20px;: Imposta la grandezza del testo a 20 pixel.
+*/
 
 #titolo {
   font-weight: bold;
