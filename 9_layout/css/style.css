@@ -1,16 +1,45 @@
+.container {
+    display: flex;
+    gap: 20px;
+    /* Spaziatura tra i contenitori */
+    padding: 20px;
+}
+
 .verde {
     background-color: green;
-    float: left; 
-
+    padding: 15px;
+    flex: 1;
+    /* Distribuisce lo spazio equamente */
+    color: white;
+    /* Migliora la leggibilità su sfondo verde */
 }
+
 .bianco {
     background-color: white;
-    float:left;
-
-
+    padding: 15px;
+    flex: 1;
+    border: 1px solid #ccc;
+    /* Aggiunge un bordo per visibilità su sfondo bianco */
 }
+
 .rosso {
     background-color: red;
-    float:left;
-
+    padding: 15px;
+    flex: 1;
+    color: white;
 }
+
+/*
+ NOTE
+ 
+ display: flex serve ad attivare il Flexbox (Flexible Box Layout), che è un sistema moderno e molto potente per gestire il layout delle pagine web.
+
+Ecco cosa fa esattamente nel tuo caso:
+
+Allineamento Automatico: Appena dai display: flex al contenitore padre (il tuo .container), tutti i suoi figli diretti (i tre div colorati) smettono di andare a capo uno sotto l'altro e si mettono automaticamente uno accanto all'altro sulla stessa riga.
+Gestione dello Spazio: Ti permette di controllare facilmente come i div occupano lo spazio.
+Senza flex, dovresti usare percentuali e calcoli complicati.
+Con flex, usando flex: 1 sui figli (come ho fatto nel tuo codice), dici al browser: "Dividi lo spazio disponibile in parti uguali per tutti".
+Spaziatura Semplice: Abilita l'uso della proprietà gap, che crea lo spazio tra gli elementi senza dover impazzire con i margini laterali (margin-right o margin-left) che spesso causano problemi di allineamento.
+In sintesi: trasforma il contenitore in una "scatola flessibile" che rende molto più facile allineare, spaziare e ridimensionare gli elementi al suo interno. È molto più robusto del vecchio metodo con float.
+*/
