@@ -1,0 +1,150 @@
+/* Reset di base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* 
+   CONTAINER FLEX (Esempio 1)
+   Il genitore che "comanda" il layout
+*/
+.flex-container {
+    display: flex;
+    /* Attiva il Flexbox! */
+
+    /* 
+       flex-direction: decide la direzione
+       row (default): orizzontale
+       column: verticale
+       row-reverse: orizzontale al contrario
+    */
+    flex-direction: row;
+
+    /* 
+       justify-content: allineamento sull'asse PRINCIPALE (orizzontale se row)
+       flex-start: inizio (sinistra)
+       center: centro
+       flex-end: fine (destra)
+       space-between: spazio tra gli elementi
+       space-around: spazio intorno agli elementi
+    */
+    justify-content: space-around;
+
+    /* 
+       align-items: allineamento sull'asse SECONDARIO (verticale se row)
+       stretch: allunga per riempire (default)
+       center: centro verticale
+       flex-start: in alto
+       flex-end: in basso
+    */
+    align-items: center;
+
+    /* Stile visivo del contenitore */
+    background-color: white;
+    border: 2px solid #333;
+    height: 300px;
+    /* Altezza fissa per vedere l'allineamento verticale */
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+   CONTAINER FLEX WRAP (Esempio 2)
+   Per gestire elementi su più righe
+*/
+.flex-wrap-container {
+    display: flex;
+
+    /* 
+       flex-wrap: decide se andare a capo
+       nowrap (default): tutti su una riga (anche se si schiacciano)
+       wrap: va a capo se non c'è spazio
+       wrap-reverse: va a capo ma al contrario
+    */
+    flex-wrap: wrap;
+
+    gap: 15px;
+    /* Spazio tra righe e colonne (molto comodo!) */
+
+    justify-content: center;
+    /* Centra tutto il blocco di elementi */
+
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* 
+   ITEMS (I figli)
+*/
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    /* Blu */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+    /* Per centrare il numero dentro il box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 2px solid #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Stili specifici per vedere differenze */
+.box-1 {
+    background-color: #ff4757;
+}
+
+/* Rosso */
+.box-2 {
+    background-color: #2ed573;
+}
+
+/* Verde */
+.box-3 {
+    background-color: #ffa502;
+}
+
+/* Arancione */
+.box-4 {
+    background-color: #5352ed;
+}
+
+/* Viola */
+.box-5 {
+    background-color: #ff6b81;
+}
+
+/* Rosa */
+.box-6 {
+    background-color: #70a1ff;
+}
+
+/* Azzurro */
+.box-7 {
+    background-color: #7bed9f;
+}
+
+/* Verde chiaro */
+.box-8 {
+    background-color: #eccc68;
+}
+
+/* Giallo scuro */
